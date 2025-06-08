@@ -2,12 +2,13 @@
 import axios from 'axios';
 import type { Movie } from '../types/movie';
 
-// const url = 'https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1';
+
+const VITE_TMDB_TOKEN = import.meta.env.VITE_API_KEY;
 
 const options = {
     headers: {
         accept: 'application/json',
-        Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZDA1NDY1M2U0MzEwNjJmMmFmMzJmNTA1ZWVjOGFjNiIsIm5iZiI6MTcxMjQ0MjkxOS4zOSwic3ViIjoiNjYxMWNlMjdjNjhiNjkwMTdkMDRjMzYxIiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.d05UvpHfSu8jyNtstGmIUSpImrw1rHDGoFcQ6YxOEcM`,
+        Authorization: `Bearer ${VITE_TMDB_TOKEN}`,
     },
 };
 
