@@ -5,6 +5,7 @@ import App from './components/App/App.tsx'
 import "modern-normalize";
 import "./global.css";
 
+
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
     <App />
