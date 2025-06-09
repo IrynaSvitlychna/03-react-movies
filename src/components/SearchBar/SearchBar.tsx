@@ -16,7 +16,7 @@ export default function SearchBar( { onSubmit }: SearchBarProps) {
       return;
     }
     onSubmit(query);
-    console.log("query", query);
+   
   };
 
   return (

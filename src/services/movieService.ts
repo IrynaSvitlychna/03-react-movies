@@ -33,7 +33,7 @@ export const fetchMovies = async (newQuery: string): Promise<Movie[]> => {
     }
     );
     
-    console.log(result);
+    // console.log(result);
     return result.data.results;
 };
 
