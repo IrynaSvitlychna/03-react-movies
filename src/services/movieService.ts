@@ -3,12 +3,10 @@ import axios from 'axios';
 import type { Movie } from '../types/movie';
 
 
-const VITE_TMDB_TOKEN = import.meta.env.VITE_API_KEY;
-
 const options = {
     headers: {
         accept: 'application/json',
-        Authorization: `Bearer ${VITE_TMDB_TOKEN}`,
+        Authorization: `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
     },
 };
 

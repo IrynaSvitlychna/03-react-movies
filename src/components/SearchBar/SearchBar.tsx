@@ -1,6 +1,6 @@
 import css from './SearchBar.module.css';
 import toast from 'react-hot-toast';
-// import { Toaster } from "react-hot-toast";
+
 
 
 interface SearchBarProps {
@@ -13,7 +13,7 @@ export default function SearchBar( { onSubmit }: SearchBarProps) {
 
     if (!query) {
       toast.error('Please enter your search query.');
-     
+      return;
     }
     onSubmit(query);
     console.log("query", query);
